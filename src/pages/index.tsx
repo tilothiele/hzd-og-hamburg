@@ -3,6 +3,8 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import { StaticImage } from "gatsby-plugin-image"
 
+import { SEO } from '../components/seo'
+
 export default function Home() {
   return (
     <Box ml={4} mr={4}>
@@ -19,3 +21,7 @@ export default function Home() {
     </Box>
   );
 }
+
+export const Head = () => (
+  <SEO />
+)

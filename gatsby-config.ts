@@ -1,6 +1,12 @@
 import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
+  siteMetadata: {
+    title: 'HZD Ortsgruppe Hamburg',
+    description: 'HZD Ortsgruppe Hamburg',
+    image: '/images/favicon.png',
+    siteUrl: 'https://hzd-og-hamburg.de'
+  },
   // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
   // don't need to define it here (just if you need to change the options)
   plugins: [
