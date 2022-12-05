@@ -14,7 +14,7 @@ const InfoBlock = () => {
       <StaticImage src="../images/hamburg-symbol-148x191.gif" alt="Hamburg"/>
       <Typography variant="h3" mt={4}>Regionalgruppe Nord</Typography>
       <Typography variant="h4" mb={4}><a href="https://www.hovawarte.com/verein/regionalgruppen/nord/og-hamburg">Ortsgruppe Hamburg</a></Typography>
-      <Typography>Die Email-Adresse unserer Geschäftsstelle lautet geschaeftsstelle@hzd-og-hamburg.de.</Typography>
+      <Typography>Die Email-Adresse unserer Geschäftsstelle lautet <a href="mailto:geschaeftsstelle@hzd-og-hamburg.de">geschaeftsstelle@hzd-og-hamburg.de</a>.</Typography>
       <Typography>Weitere Infos, Impressum und Kontaktmöglichkeiten finden Sie auf der
         Haupt-Webpräsenz <a href="https://www.hovawarte.com/verein/regionalgruppen/nord/og-hamburg/ansprechpartner">des HZD</a>.</Typography>
     </>
