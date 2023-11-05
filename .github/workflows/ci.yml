@@ -40,10 +40,12 @@ jobs:
 #      - name: Run tests
 #        run: pnpm test
 
+# initial erstmals auskommentiert - die existierenden commits folgen teils
+# nicht den commitlint regeln
       - name: Check commits messages
         uses: wagoid/commitlint-github-action@v5
 
-      - name: Check commits messages
+      - name: Deploy pages
         run: pnpm deploy
 
 
