@@ -1,9 +1,22 @@
-import React, { ReactElement } from "react"
+import React, { ReactElement } from 'react';
 
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 
-export const SEO = ({ title, description, pathname, children }: {title?: string, description?: string, pathname?: string, children?: ReactElement}) => {
-  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername } = useSiteMetadata()
+export type SEOProps = {
+  title?: string;
+  description?: string;
+  pathname?: string;
+  children?: ReactElement;
+};
+
+export const SEO = ({ title, description, pathname, children }: SEOProps) => {
+  const {
+    title: defaultTitle,
+    description: defaultDescription,
+    image,
+    siteUrl,
+    twitterUsername,
+  } = useSiteMetadata();
 
   const seo = {
     title: title || defaultTitle,
@@ -11,7 +24,7 @@ export const SEO = ({ title, description, pathname, children }: {title?: string,
     image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
     twitterUsername,
-  }
+  };
 
   return (
     <>
@@ -25,5 +38,5 @@ export const SEO = ({ title, description, pathname, children }: {title?: string,
       <meta name="twitter:image" content={seo.image} />
       {children}
     </>
-  )
-}
+  );
+};
