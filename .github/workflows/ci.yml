@@ -45,7 +45,14 @@ jobs:
 #      - name: Check commits messages
 #        uses: wagoid/commitlint-github-action@v5
 
+      - name: Build pages
+        run: pnpm build
+
       - name: Deploy pages
-        run: npm deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: master
+          FOLDER: gatsby/public
 
 
