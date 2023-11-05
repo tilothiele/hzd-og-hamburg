@@ -41,3 +41,8 @@ jobs:
 
       - name: Check commits messages
         uses: wagoid/commitlint-github-action@v5
+
+      - name: Check commits messages
+        run: pnpm deploy
+
+

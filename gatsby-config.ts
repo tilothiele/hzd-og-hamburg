@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
+  pathPrefix: "/hzd-og-hamburg",
   siteMetadata: {
     title: 'HZD Ortsgruppe Hamburg',
     description: 'HZD Ortsgruppe Hamburg',
