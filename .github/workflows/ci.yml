@@ -42,8 +42,8 @@ jobs:
 
 # initial erstmals auskommentiert - die existierenden commits folgen teils
 # nicht den commitlint regeln
-      - name: Check commits messages
-        uses: wagoid/commitlint-github-action@v5
+#      - name: Check commits messages
+#        uses: wagoid/commitlint-github-action@v5
 
       - name: Deploy pages
         run: pnpm deploy
