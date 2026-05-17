@@ -31,8 +31,8 @@ const InfoBlock = () => {
       </Typography>
       <Typography>
         Die Email-Adresse unserer Geschäftsstelle lautet{` `}
-        <a href="mailto:geschaeftsstelle@hzd-og-hamburg.de">
-          geschaeftsstelle@hzd-og-hamburg.de
+        <a href="mailto:.og-hamburg@hovawarte.com">
+          geschaeftsstelle.og-hamburg@hovawarte.com
         </a>
         .
       </Typography>
